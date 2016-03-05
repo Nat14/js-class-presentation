@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>All Things JavaScript – Tech Talk Presentation</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>JavaScript Sampler</h1>
+					<h3>A Small Journey into a big World of JavaScript</h3>
+					<p>
+						<small>Created by <a href="https://github.com/Nat14">Nat Aryucharoen</a> / <a href="https://twitter.com/natt4pon">@natt4pon</a></small>
+					</p>
+				</section>
+
+				<section data-background="http://cdn.wplift.com/wp-content/uploads/2014/07/html-css-js.png" data-background-transition="zoom">
+				</section>
+
+				<section>
+					<h2>All Good... right?</h2>
+						<img height="150" data-src="http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png">
+						<img height="150" data-src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg">
+						<img height="150" data-src="https://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg">
+						<img height="150" data-src="http://npmawesome.com/wp-content/uploads/2013/12/coffeescript.png" class="fragment">
+						<p class="fragment">
+						<img height="150" data-src="http://perlmaven.com/img/mongodb-logo.png">
+						<img height="150" data-src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png">
+						<img height="150" data-src="http://www.w3schools.com/angular/pic_angular.jpg">
+						<img height="150" data-src="https://node-os.com/images/nodejs.png">
+						</p>
+						<p class="fragment">
+						<img height="150" data-src="http://pedrorijo.com/assets/img/json-logo.png">
+						<img height="150" data-src="https://upload.wikimedia.org/wikipedia/commons/a/a1/AJAX_logo_by_gengns.svg">
+						<span class="fragment">
+							<img height="150" data-src="https://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png">
+						</span></p>
+				</section>
+
+				<section>
+					<h2>But wait...there are more</h2>
+
+						<img height="150" data-src="https://upload.wikimedia.org/wikipedia/commons/5/57/React.js_logo.svg">
+						<img height="150" data-src="http://www.labsterx.com/wp-content/uploads/2015/10/67491974.jpg">
+						<img height="150" data-src="https://upload.wikimedia.org/wikipedia/en/2/22/Logo_jasmine.svg">
+						<img height="150" data-src="https://cms-assets.tutsplus.com/uploads/users/442/posts/22973/preview_image/8778.png">
+						<img height="150" data-src="https://avatars0.githubusercontent.com/u/9637642?v=3&s=400">
+
+						<img height="100" data-src="https://upload.wikimedia.org/wikipedia/commons/2/20/Backbone.js_logo.svg">
+
+						<img height="100" data-src="http://docs.telerik.com/platform/appbuilder/cordova/supported-frameworks/images/kendo.jpg">
+						<img height="100" data-src="https://upload.wikimedia.org/wikipedia/commons/7/79/Yuilib.jpg">
+
+						<img height="100" data-src="https://upload.wikimedia.org/wikipedia/en/a/a4/Meteor-logo.png">
+
+						<img height="100" data-src="http://aurelia.io/images/aurelia-logo-high-res.png">
+
+				</section>
+
+				<section tagcloud>
+					<h4>and you guess it... still more</h4>
+				    less
+				    GruntJS
+				    JSHint
+				    JSLint
+				    markdown
+				    sass
+				    jade
+				    codekit
+				    livereload
+				    web-build
+				    jQuery UI
+				    mustache
+				    emmet.io
+				    bower
+				    browserstack
+				    npm
+				    RequireJS
+				    socket.io
+				    jQuery Mobile
+				 </section>
+				 <section>
+					<h2>JS is Everywhere</h2>
+					<p tagcloud large>
+						Server-side
+						Client-side
+						Mobile App
+						Desktop App
+						PDF
+						Database
+						Adobe Creative Suite
+						Games
+						3D Engine
+						Microcontrollers
+						GNOME Shell
+						What else?
+					</p>
+				</section>
+				<section data-background="http://i.giphy.com/xTiTnK3Tqvqy52tO4E.gif" data-background-size="700px">
+					<div style="background-color: rgba(192,192,192,0.9); color: #ffffff; padding: 20px;">
+						<h2>Chrome Extension</h2>
+					</div>
+				</section>
+
+				<section data-background="https://upload.wikimedia.org/wikipedia/en/8/81/Dashboard_Widgets_OS_X_El_Capitan.png">
+					<div style="background-color: rgba(255,255,255,0.9); color: #ffffff; padding: 20px;">
+						<h2>Apple's dashboard widgets</h2>
+					</div>
+				</section>
+
+				<section data-background="http://www.w3.org/WAI/WCAG20/Techniques/working-examples/PDF15/submit-button3.jpg"  data-background-size="1000px">
+					<div style="background-color: rgba(255,255,255,0.9); color: #ffffff; padding: 20px;">
+						<h2>in PDF</h2>
+					</div>
+				</section>
+
+				<section data-background="http://www.campusmvp.es/recursos/image.axd?picture=MEAN_750_1.png"  data-background-size="1000px">
+					<div style="background-color: rgba(0,0,0,0.2); color: #ffffff; padding: 20px;">
+						<h2>MEAN Stack</h2>
+					</div>
+				</section>
+				 <section>
+ 					<h2>What I am going talk about</h2>
+ 				    <ul>
+ 				    	<li>JavaScript the basic</li>
+							<li>JavaScript libraries and frameworks</li>
+								<ul>
+									<li>React</li>
+									<li>MEAN Stack</li>
+								</ul>
+ 				    </ul>
+ 				 </section>
+				 <section>
+
+					 <section>
+		 					<h2>The basic story</h2>
+							<p>
+								maybe i can use picture to illustrate this. evergreen space where developer cross (cartoon)
+							</p>
+		 				    <ul>
+		 				    	<li>Created in XXXX</li>
+									<li>ES5 (ECMAScript)</li>
+									<li>ES6</li>
+									<li>JavaScript libraries and frameworks</li>
+									<li class="fragment">The rise in popularity</li>
+		 				    </ul>
+						</section>
+
+						<section>
+							<h2>The popularity contest</h2>
+							<ul>
+	 				    	<li class="fragment shrink">IEEE Spectrum ranks <strong>Java</strong> as the most popular language</li>
+								<li class="fragment shrink">Redmonk ranks JavaScript just under <strong>Java</strong> as of June 2015</li>
+								<li class="fragment highlight-red">GitHub ranks <strong>JavaScript</strong> as the language with the most active repositories and total pushes</li>
+	 				    </ul>
+						</section>
+
+						 <section>
+		 					<h3>Behind the mass</h3>
+		 				    <ul>
+									<li>almost all of these third party libraries are open source</li>
+		 				    	<li>extremely difficult for companies to pick</li>
+									<li>strong sentiment behind each of the numerous frameworks</li>
+									<li>hesitant to honestly critique their choice</li>
+		 				    </ul>
+		 				 </section>
+					 </section>
+
+				 <section>
+					 <img src="images/react.png" />
+					 <h2>React - Library for building user interfaces</h2>
+					 <ul>
+						  <li>By Facebook and Instagram</li>
+					 		<li>Just the UI</li>
+							<li>Virtual DOM</li>
+							<li>Data flow</li>
+					 </ul>
+
+				 </section>
+
+				 <section>
+ 					<h2>Let look at MEAN Stack</h2>
+					<p>
+						How JavaScript fits into the 'phases' of web application development.
+					</p>
+ 					<img  data-src="http://image.slidesharecdn.com/1140dev09-150605215308-lva1-app6892/95/starting-from-scratch-with-the-mean-stack-28-638.jpg?cb=1433541311">
+
+ 				</section>
+
+				<section>
+					<section>
+						<h3>try to put JavaScript technology into the same places</h3>
+						<div style="background-color: pink; border: 1px solid black;">
+							<span>Front End Interface</span>
+							<span style="background-color: green;">DOM (manipulation) oriented</span>
+						</div>
+						<div style="background-color: lightgreen; border: 1px solid black;">
+							<span>Server</span>
+							<span style="background-color: green;">Application Tools</span>
+						</div>
+						<div style="background-color: lightyellow; border: 1px solid black;">
+							<span>Database</span>
+							<span style="background-color: green;">XXX</span>
+						</div>
+					</section>
+
+					<section>
+							<h3>JS Libraries, Frameworks and plugins</h3>
+							<div style="background-color: yellow; border: 1px solid black;">
+								<span>Front End Interface</span>
+								<span style="background-color: green;">DOM (manipulation) oriented</span>
+							</div>
+									<ul>
+										<li>Front End Interface</li>
+										<li>DOM (manipulation)</li>
+										<li>Application Tools</li>
+									</ul>
+
+									<ul>
+										<li>Development Aids (Unit testing)</li>
+										<li>Data</li>
+										<li>Pure JavaScript/Ajax</li>
+
+									</ul>
+									<ul>
+										<li>Template systems</li>
+										<li>Games</li>
+										<li>Helpers</li>
+									</ul>
+						</section>
+
+					<section>
+						<h2>Front end interface</h2>
+						<ul>
+							<li>Animation</li>
+							<li>Audio</li>
+							<li>Video</li>
+							<li>Images</li>
+							<li>Forms</li>
+							<li>Typography</li>
+							<li>User Interface</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>DOM Manipulation</h2>
+						<ul style="text-align: center; background-color: blue;">
+							<li>Frameworks</li>
+							<li>Utilities</li>
+						</ul>
+						<div style="background-color: yellow">
+							gakjdgajgajh
+						</div>
+					</section>
+
+					<section>
+						<h2>Application Tools</h2>
+						<ul>
+							<li>Frameworks</li>
+							<li>Loaders</li>
+							<li>Templating</li>
+							<li>Utilities</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Overview</h2>
+
+				</section>
+
+				<section>
+					<!-- <h2>Just in case</h2> -->
+					<img data-src="http://jktech.com/wp-content/themes/jkt/images/jkt-MEAN-Stack-Expertise.jpg" width="1000">
+
+				</section>
+
+				<section>
+					<!-- <h2>Just in case</h2> -->
+					<img data-src="http://advaitsolutions.in/wp-content/uploads/2015/08/meanjs-1024x492.png" width="1000">
+
+				</section>
+
+				<section>
+					<h2>Why using languages compile to JS</h2>
+					<p>
+						JavaScript bristles with syntactical traps, oddball design decisions, and limitations that can frustrate even the most seasoned developers.
+
+Thankfully, a wealth of JavaScript mini-languages have arisen to take the pain out of programming in JavaScript, in many cases extending features otherwise unavailable to JavaScript itself. These languages, which compile down to JavaScript, may prove easier to code, maintain, and debug than JavaScript.
+					</p>
+				</section>
+
+				<section>
+					<h2>CoffeeScript</h2>
+					<p>
+						Jeremy Ashkenas' CoffeeScript was one of the first attempts to simplify JavaScript's syntax. It remains one of the most widely used JavaScript substitutes, borrowing ideas from a number of sources: From Python, the use of whitespace as syntax; from Ruby, which provided the original CoffeeScript compiler, the way variable scoping works. A special "literate" mode can be used for detailed annotation of the code. If you ever want to fall back to regular old JavaScript within CoffeeScript, you can do that by simply placing the JavaScript code inline and bracketing it with backticks.
+					</p>
+				</section>
+
+				<section>
+					<h2>Full Stack</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Front End UI</th>
+								<th>DOM</th>
+								<th>Back End</th>
+								<th>Data</th>
+								<th>Testing</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img height="100" data-src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg">
+								</td>
+
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>$2</td>
+								<td>
+									<img height="50" data-src="https://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg">
+									<img height="100" data-src="https://upload.wikimedia.org/wikipedia/commons/5/57/React.js_logo.svg">
+
+								</td>
+
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>DOM</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+
+
+				<section>
+					<h2>Just in case</h2>
+					<img  data-src="http://www.knowarth.com/wp-content/uploads/2014/10/MVW-Frameworks-1.jpg">
+
+				</section>
+
+
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				width: 1200,
+    		// height: 700,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/tagcloud/tagcloud.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
